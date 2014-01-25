@@ -1,0 +1,41 @@
+<%= form_for @todo_list, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :task_name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :task_name, :class => 'text_field' %>
+    </div>
+  </div>
+<!--
+  <div class="control-group">
+    <%= f.label :create_date, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :create_date, :class => 'text_field' %>
+    </div>
+  </div>
+-->
+  <div class="control-group">
+    <%= f.label :limit, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :limit, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :tag, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :tag, :class => 'text_field' %>
+    </div>
+  </div>
+<!--
+  <div class="control-group">
+    <%= f.label :delete_flag, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :delete_flag, :class => 'text_field' %>
+    </div>
+  </div>
+-->
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                todo_lists_path, :class => 'btn' %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task_name: MyString
+  create_date: 2014-01-25 14:26:15
+  limit: 2014-01-25 14:26:15
+  tag: MyString
+  delete_flag: 1
+
+two:
+  task_name: MyString
+  create_date: 2014-01-25 14:26:15
+  limit: 2014-01-25 14:26:15
+  tag: MyString
+  delete_flag: 1
